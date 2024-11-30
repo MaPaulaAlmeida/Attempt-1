@@ -13,7 +13,7 @@ body {
   background-image: url("./images/bg.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Esto evita que el fondo se repita */
+  overflow: hidden;
 }
 
 /* Título */
@@ -66,23 +66,4 @@ section#title {
   text-align: justify;
   font-size: 15px;
   gap: 5rem;
-}
-
-/* Estilo del SVG y texto en curva */
-#curve {
-  width: 300px;
-  height: 300px;
-  display: block;
-  margin-top: 100px; /* Ajusta la posición de la luna */
-}
-
-text {
-  font-size: 10px; /* Tamaño de fuente ajustado */
-  text-anchor: middle;
-  fill: white; /* Asegura que el texto sea visible sobre el fondo */
-}
-
-textPath {
-  font-family: "Open Sans", sans-serif;
-  font-size: 10px; /* Tamaño del texto ajustado */
 }
