@@ -9,6 +9,10 @@ svg {
   width: 25px;
 }
 
+.slider .list .item .content p {
+  font-size: 16px; 
+}
+
 /* CSS SLIDER */
 .slider {
   height: 118vh;
