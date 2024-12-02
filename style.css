@@ -6,7 +6,7 @@
   font-family: "Open Sans";
 }
 
-/* BACKGROUNG IMAGE */
+/* BACKGROUND IMAGE */
 body {
   height: 100vh;
   background-color: black;
@@ -57,29 +57,6 @@ path {
   fill: transparent;
 }
 
-.instagram-link {
-  text-decoration: underline; /* Elimina el subrayado por defecto */
-  color: rgb(0, 0, 0); /* Establece el color blanco para todo el enlace */
-}
-
-.instagram-link:hover {
-  text-decoration: underline; /* Aplica subrayado al hacer hover */
-  color: rgb(0, 0, 0); /* Mantiene el color blanco al hacer hover */
-}
-
-.instagram-text {
-  font-style: italic; /* Aplica estilo itálico al texto */
-  color: rgb(0, 0, 0); /* Asegura que el texto esté en blanco */
-}
-
-/* TITLE ANIMATION KEYFRAME */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* NAVEGATION BAR */
 .navbar {
   width: 100%;
@@ -111,7 +88,6 @@ path {
   border-radius: 50px;
   border: none;
   text-align: center;
-  text-align: justify;
   font-size: 15px;
   gap: 5rem;
 }
@@ -119,6 +95,14 @@ path {
 .navbar .links a:hover {
   background-color: white;
   color: black;
+}
+
+/* TITLE ANIMATION KEYFRAME */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ANIMATED TEXT IN SVG */
@@ -159,18 +143,215 @@ path:nth-child(5) text {
   }
 }
 
-/* TITLE ANIMATION */
-#title h1,
-#title2 h1 {
-  opacity: 0;
-  transform: translateY(30px); /* Both titles will move up */
-  animation: fadeInUp 1s ease-out forwards; /* Same duration as SVG text */
+/* MEDIA */
+@media (max-width: 1024px) {
+  /* Ajustes para dispositivos tablet (iPad y otros dispositivos similares) */
+  .navbar {
+    height: 50px;
+    padding: 0 30px;  /* Añadir margen a los lados del navbar */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;  /* Centrar el navbar */
+    max-width: 960px;  /* Limitar el ancho máximo del navbar */
+  }
+
+  .navbar .links {
+    gap: 0.3rem;
+    margin-left: 0;
+  }
+
+  .navbar .links a {
+    font-size: 14px !important;  /* Ajuste del tamaño de texto */
+    padding: 0.2rem 0.5rem;  /* Reducir el padding horizontal para hacer el fondo más angosto */
+    background-color: rgba(255, 255, 255, 0.192);  /* Fondo de los enlaces */
+    border-radius: 50px;  /* Mantener bordes redondeados */
+    text-align: center; /* Alineación centrada */
+    margin-top: 30px;
+  }
+
+  .navbar .logo img {
+    width: 150px;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  #title h1,
+  #title2 h1 {
+    font-size: 60px;  /* Aumentar el tamaño del texto */
+    letter-spacing: 5px;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  #title2 h1 {
+    font-size: 50px;
+    letter-spacing: 15px;
+    margin-top: 20px;
+  }
+
+  section#title {
+    margin-top: 100px;
+  }
+
+  svg {
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    position: relative; 
+    transform: translateY(30px); 
+  }
+
+  svg text {
+    font-size: 25px !important; 
+    text-anchor: middle; 
+  }
+
+  /* Ajuste de la posición del texto dentro del SVG */
+  svg path {
+    margin-top: 10px; 
+  }
+
+  /* Ocultar SVG en pantallas pequeñas y mostrar el párrafo */
+  .svg-text {
+    display: block; /* Mostrar el párrafo en pantallas pequeñas */
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: white; /* Color del texto en blanco */
+    width: 90%; /* Hacer el texto más estrecho */
+    margin-left: auto; /* Centrar el párrafo */
+    margin-right: auto; /* Centrar el párrafo */
+  }
+
+  svg {
+    display: none; /* Ocultar el SVG en pantallas pequeñas */
+  }
 }
 
-#title h1 {
-  animation-delay: 0.5s; /* Slight delay for the first heading */
+@media (max-width: 768px) {
+  /* Ajustes para pantallas de móviles más pequeños */
+  .navbar {
+    height: 40px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar .links {
+    gap: 0.3rem;
+    margin-left: -50px; 
+  }
+
+  .navbar .links a {
+    font-size: 8px !important;  /* Ajuste del tamaño de texto */
+    padding: 0.1rem 0.3rem;  /* Reducir el padding horizontal para hacer el fondo más angosto */
+    background-color: rgba(255, 255, 255, 0.192);  /* Fondo de los enlaces */
+    border-radius: 50px;  /* Mantener bordes redondeados */
+    text-align: center; /* Alineación centrada */
+  }
+
+  .navbar .logo img {
+    width: 75px;
+    height: auto;
+    margin-left: 30;
+  }
+
+  #title h1,
+  #title2 h1 {
+    font-size: 35px;
+    letter-spacing: 4px;
+    margin-top: 100px;
+  }
+
+  #title2 h1 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    margin-top: 40px;
+  }
+
+  section#title {
+    margin-top: 80px;
+  }
+
+  svg {
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    position: relative; 
+    transform: translateY(30px); 
+  }
+
+  svg text {
+    font-size: 20px !important; 
+    text-anchor: middle; 
+  }
+
+  /* Ajuste de la posición del texto dentro del SVG */
+  svg path {
+    margin-top: 10px; 
+  }
+
+  /* Ocultar SVG en pantallas pequeñas y mostrar el párrafo */
+  .svg-text {
+    display: block; /* Mostrar el párrafo en pantallas pequeñas */
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: white; /* Color del texto en blanco */
+    width: 85%; /* Hacer el texto más estrecho */
+    margin-left: auto; /* Centrar el párrafo */
+    margin-right: auto; /* Centrar el párrafo */
+  }
+
+  svg {
+    display: none; /* Ocultar el SVG en pantallas pequeñas */
+  }
 }
 
-#title2 h1 {
-  animation-delay: 0.8s; /* Slight delay for the second heading */
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens (smartphones) */
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar .links a {
+    font-size: 14px;  /* Ajuste del tamaño de los enlaces */
+    padding: 0.5rem 1rem;  /* Aumentar el padding para facilitar el toque */
+  }
+
+  #title h1,
+  #title2 h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  #title2 h1 {
+    font-size: 28px;
+    letter-spacing: 6px;
+    margin-top: 30px;
+  }
+
+  section#title {
+    margin-top: 195px;
+  }
+
+  .svg-text {
+    display: block; /* Mostrar el párrafo en pantallas pequeñas */
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: -30px;
+    color: white; /* Color del texto en blanco */
+    width: 85%; /* Hacer el texto más estrecho */
+    margin-left: auto; /* Centrar el párrafo */
+    margin-right: auto; /* Centrar el párrafo */
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
 }
+
