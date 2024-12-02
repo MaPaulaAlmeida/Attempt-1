@@ -16,8 +16,6 @@ body {
   overflow: hidden;
 }
 
-
-
 /* TITLE ANIMATION */
 #title h1,
 #title2 h1 {
@@ -52,12 +50,11 @@ section#title {
   text-align: center;
   color: white;
   margin-top: 50px;
-
 }
 
 path {
-  stroke: none;  
-  fill: transparent; 
+  stroke: none;
+  fill: transparent;
 }
 
 /* TITLE ANIMATION KEYFRAME */
@@ -111,7 +108,7 @@ path {
 
 /* ANIMATED TEXT IN SVG */
 text {
-  opacity: 0;  /* Start with text hidden */
+  opacity: 0; /* Start with text hidden */
   transform: translateY(30px); /* Start with the text slightly moved down */
   filter: blur(5px); /* Apply a blur effect to the text */
   animation: fadeInUp 1s ease-out forwards; /* Apply the animation with the same duration as the heading */
@@ -119,7 +116,7 @@ text {
 
 /* Adjust delays for sequential appearance of the text */
 path:nth-child(1) text {
-  animation-delay: 1s; 
+  animation-delay: 1s;
 }
 
 path:nth-child(2) text {
@@ -141,7 +138,7 @@ path:nth-child(5) text {
 /* KEYFRAME ANIMATION for text appearance */
 @keyframes fadeInUp {
   to {
-    opacity: 1;  /* Fade in the text */
+    opacity: 1; /* Fade in the text */
     transform: translateY(0); /* Move the text to its original position */
     filter: blur(0); /* Remove the blur effect */
   }
@@ -162,5 +159,3 @@ path:nth-child(5) text {
 #title2 h1 {
   animation-delay: 0.8s; /* Slight delay for the second heading */
 }
-
-

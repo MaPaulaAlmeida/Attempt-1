@@ -197,14 +197,139 @@ svg {
   position: absolute;
   inset: auto 10px 10px 10px;
 }
-@media screen and (max-width: 678px) {
-  .thumbnail {
-    justify-content: start;
+
+/*MEDIA*/
+@media (min-width: 320px) {
+  .navbar .links a {
+    font-size: 8px;
+    padding: 0.25rem 0.6rem;
+  }
+  .navbar .logo img {
+    width: 80px;
+  }
+  .slider .list .item .content {
+    font-size: 12px;
+    text-align: left; 
+    left: 5%;
+    top: 23%; 
+    max-width: 90%;
+    text-align: justify;
   }
   .slider .list .item .content h2 {
-    font-size: 60px;
+    font-size: 35px;
   }
   .arrows {
-    top: 10%;
+    top: 62%; 
+  }
+  .thumbnail {
+    gap: 5px;
+    padding: 0 5px;
+    bottom: -10px; 
+    position: absolute;
+  }
+  .thumbnail .item {
+    width: 70px;
+    height: 110px;
+  }
+
+}
+
+@media (min-width: 481px) {
+  .navbar .links a {
+    font-size: 10px;
+    padding: 0.3rem 0.75rem;
+  }
+  .navbar .logo img {
+    width: 100px;
+  }
+  .slider .list .item .content {
+    font-size: 14px;
+    text-align: left;
+    left: 5%;
+    top: 25%;
+    max-width: 85%;
+    text-align: justify;
+  }
+  .slider .list .item .content h2 {
+    font-size: 25px;
+  }
+  .arrows {
+    top: 60%;
+  }
+  .thumbnail {
+    bottom: 10px; 
+  }
+  .thumbnail .item {
+    width: 100px;
+    height: 150px;
+  }
+
+}
+
+@media (min-width: 641px) {
+  .navbar .links a {
+    font-size: 12px;
+    padding: 0.34rem 0.85rem;
+  }
+  .navbar .logo img {
+    width: 120px;
+  }
+  .slider .list .item .content {
+    font-size: 20px;
+    text-align: left;
+    left: 10%;
+    top: 20%;
+    max-width: 75%;
+    text-align: justify;
+  }
+  .slider .list .item .content h2 {
+    font-size: 35px;
+  }
+  .arrows {
+    top: 60%;
+  }
+  .thumbnail {
+    bottom: 100px; 
+  }
+  .thumbnail .item {
+    width: 120px;
+    height: 180px;
   }
 }
+
+@media (min-width: 961px) {
+  .navbar .links a {
+    font-size: 14px;
+    padding: 0.4rem 1rem;
+  }
+  .navbar .logo img {
+    width: 140px;
+  }
+  .slider .list .item .content {
+    font-size: 18px;
+    text-align: left;
+    left: 10%;
+    top: 18%;
+    max-width: 70%;
+    text-align: justify;
+  }
+  .slider .list .item .content h2 {
+    font-size: 65px;
+  }
+  .arrows {
+    top: 55%;
+  }
+  .thumbnail {
+    bottom: 60px;
+  }
+  .thumbnail .item {
+    width: 140px;
+    height: 200px;
+  }
+}
+
+
+
+
+
+
