@@ -16,15 +16,21 @@ body {
   overflow: hidden;
 }
 
-/* TITLE */
-#title h1 {
+
+
+/* TITLE ANIMATION */
+#title h1,
+#title2 h1 {
   font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 8px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
 }
+
 #title2 h1 {
   font-size: 40px;
-  text-transform: uppercase;
   letter-spacing: 14px;
   color: white;
   height: calc(31vh - 70px);
@@ -34,6 +40,7 @@ body {
   justify-content: center;
   text-align: center;
   font-weight: 100;
+  animation-delay: 0.5s; /* Delay for smooth sequence */
 }
 
 section#title {
@@ -45,6 +52,20 @@ section#title {
   text-align: center;
   color: white;
   margin-top: 50px;
+
+}
+
+path {
+  stroke: none;  /* Remove any stroke from the paths */
+  fill: transparent;  /* Make the paths transparent */
+}
+
+/* TITLE ANIMATION KEYFRAME */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* NAVEGATION BAR */
@@ -83,26 +104,63 @@ section#title {
   gap: 5rem;
 }
 
-svg {
-  display: block;
-  margin: auto;
+.navbar .links a:hover {
+  background-color: white;
+  color: black;
 }
 
-.text {
-  font-size: 12px;
-  fill: rgb(255, 255, 255);
+/* ANIMATED TEXT IN SVG */
+text {
+  opacity: 0;  /* Start with text hidden */
+  transform: translateY(30px); /* Start with the text slightly moved down */
+  filter: blur(5px); /* Apply a blur effect to the text */
+  animation: fadeInUp 1s ease-out forwards; /* Apply the animation with the same duration as the heading */
 }
 
-#curve {
-  stroke: rgb(
-    255,
-    255,
-    255
-  );
-  stroke-width: 0px;
+/* Adjust delays for sequential appearance of the text */
+path:nth-child(1) text {
+  animation-delay: 1s; 
 }
 
-path {
-  stroke: none;
-  fill: transparent;
+path:nth-child(2) text {
+  animation-delay: 1.2s;
 }
+
+path:nth-child(3) text {
+  animation-delay: 1.4s;
+}
+
+path:nth-child(4) text {
+  animation-delay: 1.6s;
+}
+
+path:nth-child(5) text {
+  animation-delay: 1.8s;
+}
+
+/* KEYFRAME ANIMATION for text appearance */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;  /* Fade in the text */
+    transform: translateY(0); /* Move the text to its original position */
+    filter: blur(0); /* Remove the blur effect */
+  }
+}
+
+/* TITLE ANIMATION */
+#title h1,
+#title2 h1 {
+  opacity: 0;
+  transform: translateY(30px); /* Both titles will move up */
+  animation: fadeInUp 1s ease-out forwards; /* Same duration as SVG text */
+}
+
+#title h1 {
+  animation-delay: 0.5s; /* Slight delay for the first heading */
+}
+
+#title2 h1 {
+  animation-delay: 0.8s; /* Slight delay for the second heading */
+}
+
+
