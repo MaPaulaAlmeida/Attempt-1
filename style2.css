@@ -10,7 +10,7 @@ svg {
 }
 
 .slider .list .item .content p {
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 /* NAVEGATION BAR */
@@ -19,15 +19,15 @@ svg {
   height: 60px;
   max-width: 90%;
   margin: 0 auto;
-  margin-top: 25px; 
+  margin-top: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
   z-index: 1000;
-  background-color: none; 
-  padding: 0 50px;
+  background-color: none;
+  padding: 0 5%;
 }
 
 .navbar .links {

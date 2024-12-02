@@ -56,8 +56,8 @@ section#title {
 }
 
 path {
-  stroke: none;  /* Remove any stroke from the paths */
-  fill: transparent;  /* Make the paths transparent */
+  stroke: none;  
+  fill: transparent; 
 }
 
 /* TITLE ANIMATION KEYFRAME */
