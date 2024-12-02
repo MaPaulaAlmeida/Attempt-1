@@ -9,8 +9,8 @@ let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
 let timeDom = document.querySelector('.carousel .time');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-let timeRunning = 5000;
-let timeAutoNext = 10000;
+let timeRunning = 4000;
+let timeAutoNext = 8000;
 
 nextDom.onclick = function(){
     showSlider('next');    
