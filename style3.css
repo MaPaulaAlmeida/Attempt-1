@@ -243,6 +243,33 @@ header {
   color: #000;
 }
 
+/* Estilo para el enlace y el ícono */
+.instagram-link {
+  text-decoration: underline;
+  color: white;
+  transition: color 0.3s;
+}
+
+/* Asegura que el ícono tenga el estilo adecuado */
+.instagram-link i {
+  font-size: 16px; /* Ajusta el tamaño del ícono */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+/* Cambia el color a negro cuando se pasa el ratón */
+.instagram-link:hover {
+  color: rgb(105, 105, 105);
+}
+
+.instagram-link:hover i {
+  color: rgb(105, 105, 105);
+}
+
+/* Estilo adicional para el texto */
+.instagram-info {
+  font-style: italic; /* Aplica itálico a todo el texto entre paréntesis */
+}
+
 /* ANIMATION */
 .carousel .list .item:nth-child(1) {
   z-index: 1;

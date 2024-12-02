@@ -11,6 +11,7 @@ svg {
 
 .slider .list .item .content p {
   font-size: 16px;
+  margin-top: 20px;
 }
 
 /* NAVEGATION BAR */
@@ -57,8 +58,17 @@ svg {
 }
 
 .navbar .logo img {
-  width: 150px; /* Ajuste para un diseño más compacto */
+  width: 150px;
   height: auto;
+}
+
+.content a {
+  color: white;
+  text-decoration: underline;
+}
+
+.content a:hover {
+  color: rgb(105, 105, 105);
 }
 
 /* CSS SLIDER */
@@ -208,10 +218,10 @@ svg {
     width: 80px;
   }
   .slider .list .item .content {
-    font-size: 12px;
-    text-align: left; 
+    font-size: 10px;
+    text-align: left;
     left: 5%;
-    top: 23%; 
+    top: 20%;
     max-width: 90%;
     text-align: justify;
   }
@@ -219,19 +229,18 @@ svg {
     font-size: 35px;
   }
   .arrows {
-    top: 62%; 
+    top: 62%;
   }
   .thumbnail {
     gap: 5px;
     padding: 0 5px;
-    bottom: -10px; 
+    bottom: -10px;
     position: absolute;
   }
   .thumbnail .item {
     width: 70px;
     height: 110px;
   }
-
 }
 
 @media (min-width: 481px) {
@@ -257,13 +266,12 @@ svg {
     top: 60%;
   }
   .thumbnail {
-    bottom: 10px; 
+    bottom: 10px;
   }
   .thumbnail .item {
     width: 100px;
     height: 150px;
   }
-
 }
 
 @media (min-width: 641px) {
@@ -289,7 +297,7 @@ svg {
     top: 60%;
   }
   .thumbnail {
-    bottom: 100px; 
+    bottom: 100px;
   }
   .thumbnail .item {
     width: 120px;
@@ -327,9 +335,3 @@ svg {
     height: 200px;
   }
 }
-
-
-
-
-
-

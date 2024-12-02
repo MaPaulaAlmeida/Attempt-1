@@ -57,6 +57,21 @@ path {
   fill: transparent;
 }
 
+.instagram-link {
+  text-decoration: underline; /* Elimina el subrayado por defecto */
+  color: rgb(0, 0, 0); /* Establece el color blanco para todo el enlace */
+}
+
+.instagram-link:hover {
+  text-decoration: underline; /* Aplica subrayado al hacer hover */
+  color: rgb(0, 0, 0); /* Mantiene el color blanco al hacer hover */
+}
+
+.instagram-text {
+  font-style: italic; /* Aplica estilo itálico al texto */
+  color: rgb(0, 0, 0); /* Asegura que el texto esté en blanco */
+}
+
 /* TITLE ANIMATION KEYFRAME */
 @keyframes fadeInUp {
   to {
