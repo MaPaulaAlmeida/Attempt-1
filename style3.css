@@ -67,7 +67,7 @@ header {
 }
 
 .navbar .logo img {
-  width: 150px; 
+  width: 150px;
   height: auto;
   padding-left: 60%;
 }
@@ -142,7 +142,7 @@ header {
 
 .des {
   position: relative;
-  top:-20px;
+  top: -20px;
   background-color: none;
   padding: 0px;
   border-radius: 15px;
@@ -398,49 +398,47 @@ header {
   }
 }
 
-
 /*MEDIA*/
 @media screen and (max-width: 678px) {
-
   .navbar {
-    height: 40px; 
-    padding: 0 50px; 
+    height: 40px;
+    padding: 0 50px;
     display: flex;
     align-items: auto;
-    justify-content: space-between; 
+    justify-content: space-between;
     gap: 3rem;
   }
 
   .navbar .links {
-    gap: 0.5rem; 
-    margin-left: -35px; 
+    gap: 0.5rem;
+    margin-left: -35px;
   }
 
   .navbar .links a {
-    font-size: 8px; 
-    padding: 0.2rem 0.5rem; 
+    font-size: 8px;
+    padding: 0.2rem 0.5rem;
   }
 
   .navbar .logo img {
-    width: 60px; 
-    height: auto; 
-    margin-right: -40px; 
+    width: 80px;
+    height: auto;
+    margin-right: -40px;
   }
 
   .thumbnail {
-    gap: 5px; 
+    gap: 5px;
     padding: 0 5px;
-    bottom: 20px; 
-    justify-content: center; 
+    bottom: 20px;
+    justify-content: center;
   }
 
   .thumbnail .item {
-    width: 105px; 
-    height: 160px; 
+    width: 105px;
+    height: 160px;
   }
 
   .thumbnail .item img {
-    border-radius: 10px; 
+    border-radius: 10px;
   }
 
   .carousel .list .item .content {
@@ -448,6 +446,6 @@ header {
   }
 
   .carousel .list .item .content .title {
-    font-size: 30px; 
+    font-size: 30px;
   }
 }
